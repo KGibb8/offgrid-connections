@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Offgrid Connections</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+            <h1>Offgrid Connections: From London to Mars</h1>
+        </section>
+        <section>
+          <h2>Preflight checklist</h2>
+          <ul>
+            <li>2 phones or other hotspots, with <strong>no internet connection</strong></li>
+            <li>SSID and passwords of the hotspot WiFi</li>
+            <li>USB Sticks with Linux, Mac and Windows installers</li>
+            <li>Turn the internet off!</li>
+            <li>Projector working? I hope so!</li>
+          </ul>
+        </section>
+        <section>
+          <h3>Already Scuttling?</h3>
+          <p>Any existing users, we're going to start new IDs. So please to a backup of your <code>.ssb</code> folder, or sit out!</p>
+          <ul>
+            <li>Open a terminal...</li>
+            <li><code>$ mv .ssb .ssb.backup</code></li>
+          </ul>
+          <p>(When we've finished and you want to go back...)</p>
+          <ul>
+            <li><code>$ rm -rf .ssb</code></li>
+            <li><code>$ mv .ssb.backup .ssb</code></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Install Patchwork</h3>
+          <p>There are 5 USB sticks going around the room with the relevant installers. If anyone needs help getting setup, please ask one of us or the person next to you</p>
+          <p>If you've only got a phone, we can try and get you setup on Manyverse. Go to the Google PlayStore (reconnect to the internet) and download Manyverse. Install it and then disconnect!</p>
+        </section>
+        <section>
+          <h3></h3>
+        </section>
+        <section>
+          <img src="./lib/images/geodome.jpg" alt="" style="height: 100vh">
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+  dependencies: [
+  { src: 'plugin/markdown/marked.js' },
+  { src: 'plugin/markdown/markdown.js' },
+  { src: 'plugin/notes/notes.js', async: true },
+    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+  ]
+});
+    </script>
+  </body>
+</html>
